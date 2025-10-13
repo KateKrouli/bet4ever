@@ -1,0 +1,33 @@
+<header>
+  <div class="header main-width">
+    <a href="" class="header__logo">Elbette 1xBet’te!</a>
+    <div class="header__nav">
+      <nav>
+        <ul>
+          <li><a href="#">Klip</a></li>
+          <li><a href="#"">Avantajlar</a></li>
+          <li><a href="#">Avantajlar</a></li>
+          <li><a href="#"">Seçimini Yap</a></li>
+        </ul>
+      </nav>
+      </div>
+      <a class="header__btn" href=""><span class="btn">Hemen Oyunu Ver</span></a>
+
+    <div class="header__mobile-btn"></div>
+   </div> 
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileBtn = document.querySelector('.header__mobile-btn');
+  const nav = document.querySelector('.header__nav');
+  const header = document.querySelector('header');
+  if (mobileBtn && nav && header) {
+    mobileBtn.addEventListener('click', function() {
+      mobileBtn.classList.toggle('close');
+      nav.classList.toggle('open');
+      header.classList.toggle('nav-open');
+    });
+  }
+});
+</script>
