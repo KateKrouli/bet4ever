@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Swiper Test</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    .swiper {
+      width: 600px;
+      height: 300px;
+    }
+    .swiper-slide {
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    .swiper-button-prev, .swiper-button-next {
+      color: #2E2E2E;
+      background: #f4f2ef;
+      border: 1px solid #e5e5e5;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Слайд 1</div>
+      <div class="swiper-slide">Слайд 2</div>
+      <div class="swiper-slide">Слайд 3</div>
+      <div class="swiper-slide">Слайд 4</div>
+      <div class="swiper-slide">Слайд 5</div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const slider = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      mousewheel: true,
+      grabCursor: true,
+    });
+  </script>
+</body>
+</html>

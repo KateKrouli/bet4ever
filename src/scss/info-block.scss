@@ -1,0 +1,133 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 70px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 50px;
+
+    &-items {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 20px;
+
+        &--1 {
+
+            & .info__list-item {
+                max-width: calc(70% - 10px);
+            }
+                
+            & .info__list-item + .info__list-item {
+                max-width: calc(30% - 10px);
+
+                 &:hover {
+                    max-width: calc(50% - 10px);
+                }
+            }
+
+            .info__list-item:has(+ .info__list-item:hover) {
+                max-width: calc(50% - 10px);
+             }
+
+        }
+
+        &--2 {
+
+            & .info__list-item {
+                max-width: calc(30% - 10px);
+
+                &:hover {
+                    max-width: calc(50% - 10px);
+                }
+            }
+                
+            & .info__list-item + .info__list-item {
+                max-width: calc(70% - 10px);
+            }
+
+            & .info__list-item:hover + .info__list-item {
+                max-width: calc(50% - 10px);
+            }
+
+        }
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        position: relative;
+        height: 371px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 24px;
+        flex: 1;
+        gap: 16px;
+        transition: all 0.3s ease;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 64px;
+            height: 64px;
+            background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'><path d='M1.66667 9.58333C0.884263 9.58333 0.25 10.2176 0.25 11C0.25 11.7824 0.884263 12.4167 1.66667 12.4167L21.6215 12.4167L14.8316 19.2066C14.2784 19.7598 14.2784 20.6568 14.8316 21.2101C15.3848 21.7633 16.2818 21.7633 16.8351 21.2101L25.0417 13.0035C26.1481 11.897 26.1482 10.103 25.0417 8.99653L16.8351 0.789932C16.2818 0.236688 15.3848 0.236688 14.8316 0.789932C14.2784 1.34318 14.2784 2.24016 14.8316 2.7934L21.6215 9.58333L1.66667 9.58333Z' fill='%23ffffff'/></svg>") center no-repeat;
+            border-radius: 100%;
+            border: 1px solid #FFF;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition: all .3s ease;
+        }
+
+        div {
+            padding: 24px;
+            border-radius: 0 0 24px 24px;
+            transition: all .3s ease;
+        }
+
+        h3 {
+            margin: 0;
+            color: #FFF;
+            text-align: right;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.5;
+            letter-spacing: -0.96px;
+        }
+
+        p {
+            max-height: 0;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            transition: all .3s ease;
+            color: #FFF;
+            font-size: 22px;
+            line-height: 1.5;
+            
+        }
+
+        &:hover {
+            &:after {
+                background: #fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'><path d='M1.66667 9.58333C0.884263 9.58333 0.25 10.2176 0.25 11C0.25 11.7824 0.884263 12.4167 1.66667 12.4167L21.6215 12.4167L14.8316 19.2066C14.2784 19.7598 14.2784 20.6568 14.8316 21.2101C15.3848 21.7633 16.2818 21.7633 16.8351 21.2101L25.0417 13.0035C26.1481 11.897 26.1482 10.103 25.0417 8.99653L16.8351 0.789932C16.2818 0.236688 15.3848 0.236688 14.8316 0.789932C14.2784 1.34318 14.2784 2.24016 14.8316 2.7934L21.6215 9.58333L1.66667 9.58333Z' fill='%23000000'/></svg>") center no-repeat;
+            }
+
+            div {
+            --tw-backdrop-blur: blur(8px);
+            backdrop-filter: var(--tw-backdrop-blur);
+            }
+
+            p {
+                max-height: 1000px;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    }
+}

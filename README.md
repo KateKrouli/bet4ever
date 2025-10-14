@@ -30,7 +30,6 @@
    - `npm run serve` — запуск live-server для папки `dist`.
    - `npm run watch:scss` — вотчер для SCSS.
    - `npm run watch:js` — вотчер для main.js.
-   - `npm run watch:lang` — вотчер для lang.js.
    - `npm run watch:html` — вотчер для HTML-компонентов (posthtml).
    - `npm run copy:images` — копирование изображений.
    - `npm run copy:components` — копирование компонентов.
