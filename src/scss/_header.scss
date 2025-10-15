@@ -8,6 +8,11 @@
     background: transparent;
     z-index: 1;
 
+    @media (max-width: 767px) {
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
     &__logo {
       line-height: 1;
     }
@@ -17,6 +22,12 @@
       align-items: center;
       justify-content: space-between;
       gap: 30px;
+      margin: 0;
+      padding: 0;
+
+        @media (max-width: 767px) {
+          gap: 15px;
+        }
  
         li {
           list-style: none;

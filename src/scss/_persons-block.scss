@@ -1,0 +1,196 @@
+.persons {
+    padding: 100px 70px;
+
+     @media (max-width: 1024px) { 
+        padding: 70px 30px;
+     }
+
+    &__slider {
+        position: relative;
+        overflow: visible;
+        margin-top: 50px;
+
+         @media (max-width: 1024px) { 
+            margin-top: 20px;
+         }
+
+    }
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; 
+        flex: 0 0 auto;
+        width: auto;
+       
+        border-radius: 24px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; 
+        flex: 0 0 auto;
+        width: 320px;
+        height: 504px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 24px;
+        padding: 25px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            width: 753px;
+            background-position-y: 13%;
+
+            .persons__content {
+                opacity: 1;
+                visibility: visible;
+            }
+
+        }
+
+         @media (max-width: 1024px) { 
+            width: 100%;
+            height: 300px;
+            background-position-y: 25%;
+         }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: auto;
+        color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease; 
+
+        @media (max-width: 1024px) { 
+             opacity: 1;
+             visibility: visible;
+
+             @media (max-width: 767px) {
+                align-items: flex-start;
+             } 
+        }
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+                @media (max-width: 767px) {
+                     margin-left: - 48px;
+                }
+
+            .btn  {
+                width: 136px;
+                height: 36px;
+                font-size: 16px;
+                padding: 5px 40px 5px 25px;
+
+                &:hover {
+                     padding: 5px 25px 5px 40px;
+
+                    div {
+                        right: calc(100% - 32px);
+                    }
+                }
+
+                div {
+                    width: 28px;
+                    height: 28px;
+                    background-size: contain;
+                }
+
+                 @media (max-width: 767px) {
+                    width: 100%;
+                    
+                 }
+            }
+        }
+
+        img {
+            @media (max-width: 767px) { 
+                width: 48px;
+                margin-top: -20px;
+            }
+        }
+    }
+
+    &__game {
+        color: #FFF;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -1.2px;
+
+        @media (max-width: 1024px) { 
+            font-size: 32px;
+
+             @media (max-width: 767px) { 
+            font-size: 20px;
+        }
+        }
+    }
+
+    &__text {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.72px;
+
+         @media (max-width: 767px) {
+            font-size: 16px;
+         }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 7px;
+        margin-bottom: 20px;
+        height: 40px;
+    }
+
+    .swiper-button-prev,
+        .swiper-button-next {
+            background: #000;
+            border: 1px solid #000;
+            display: flex;
+            z-index: 2;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            left: auto;
+            right: auto;
+            transition: all 0.3s ease;
+
+            &.swiper-button-disabled {
+                background: #fff;
+
+                svg {
+                    fill: #98A2B3;
+                }
+            }
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            display: none;
+        }
+        .swiper-button-prev svg,
+        .swiper-button-next svg {
+            width: 9px;
+            height: 16px;
+            fill: #FCFCFD;
+
+        }
+
+}

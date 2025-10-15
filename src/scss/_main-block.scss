@@ -7,6 +7,10 @@
     padding: 70px;
     color: #FFF;
 
+     @media (max-width: 767px) {
+        padding: 30px;
+     }
+
     &__video {
         position: absolute;
         top: 0;
@@ -40,33 +44,68 @@
         gap: 50px;
         z-index: 1;
 
+         @media (max-width: 1024px) {
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            text-align: center;
+
+             @media (max-width: 767px) {
+                gap: 20px;
+             }
+        }
+
         h1 {
             font-size: 64px;
             font-weight: 700;
             line-height: 1.5;
+            margin: 0;
+
+                @media (max-width: 1024px) {
+                    font-size: 40px;
+
+                    @media (max-width: 767px) {
+                        font-size: 26px;
+                    }
+                }
         }
     }
 
     &__button {
         margin-top: 40px;
 
+         @media (max-width: 767px) {
+            margin-top: 20px;
+         }
+
         button {
             font-size: 36px;
             font-weight: 600;
             transition-duration: .3s;
             color: #f15a24;
+
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
         }
 
         p {
             font-size: 30px;
 
-        }
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        } 
     }
 
     &__links {
         display: flex;
         flex-direction: column;
         gap: 16px;
+
+        @media (max-width: 1024px) {
+            flex-direction: row;
+        }
     }
     
     &__link {
@@ -119,12 +158,49 @@
         flex-wrap: wrap;
         gap: 48px;
 
+         @media (max-width: 1024px) {
+            gap: 30px;
+                @media (max-width: 767px) {
+                    text-align: center;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+           
+         }
+
         &-content {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             gap: 48px;
             flex-wrap: wrap;
+
+             @media (max-width: 1024px) {
+                gap: 30px;
+
+                 @media (max-width: 767px) {
+                flex-direction: column;
+                gap: 20px;
+            }
+            }
+
+            img {
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+
+        p {
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+
+             span {
+                @media (max-width: 767px) {
+                    display: none;
+                    }
+            }
         }
     }
 }

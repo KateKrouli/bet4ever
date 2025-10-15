@@ -2,92 +2,105 @@ footer {
     display: flex;
     align-items: center;
     justify-content: stretch;
+    padding: 70px;
+    background: #000;
 
     .footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        padding-top: 12px;
-        padding-bottom: 96px;
-        gap: 12px;
+        justify-content: center;
+        gap: 36px;
         width: 100%;
-        font-size: 12px;
+        max-width: 1420px;
         line-height: 150%;
-        color: var(--base-white-60, rgba(255, 255, 255, 0.60));
 
-        @media (max-width: 767px) { 
-            flex-direction: column;
-            padding-bottom: 16px;
-            gap: 8px;
-        }
+        &__title {
+            color:  #FCFCFD;
+            text-overflow: ellipsis;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 100%; 
+            letter-spacing: 1.32px;
 
-        &__text {
-            padding: 24px;
-            background: rgba(255, 255, 255, 0.05);
-            color: rgba(255, 255, 255, 0.60);
-            @media (max-width: 767px) { 
-                padding: 16px;
-                font-size: 12px;
+            @media (max-width: 767px) {
+                font-size: 20px;
             }
         }
 
-        &__content {
+        &__controls {
             display: flex;
             align-items: stretch;
-            gap: 12px;
-            width: 100%;
+            gap: 3vw;
 
-            @media (max-width: 767px) { 
+            @media (max-width: 1024px) { 
                 flex-direction: column;
-                gap: 8px;
+                gap: 24px;
+                width: 100%;
+                 align-items: center;
             }
 
+            &-block {
+                display: flex;
+                align-items: center;
+                 gap: 3vw;
+
+                 @media (max-width: 1024px) { 
+                flex-direction: column;
+                gap: 24px;
+                width: 100%;
+                 align-items: center;
+            }
+
+                p {
+                    color:  #FCFCFD;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 1.6; 
+                    letter-spacing: 0.6px;
+
+                    @media (max-width: 767px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &-line {
+                width: 2px;
+                background: rgba(237, 237, 237, 0.20);
+            }
+        }
+
+        &__line {
+            width: 100%;
+            height: 2px;
+            background: rgba(237, 237, 237, 0.2);
         }
 
         &__copyright {
-            padding: 24px;
-            background: rgba(255, 255, 255, 0.05);
-            flex: 1;
+            color:  #FCFCFC;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.2;
 
             @media (max-width: 767px) { 
-                padding: 16px;
-                font-size: 12px;
-                order: 2;
-               
+                font-size: 16px;
             }
         }
 
-        &__links{
+        .mirrors {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-width: 160px;
-            gap: 12px;
-            padding: 24px;
-           background: rgba(255, 255, 255, 0.05);
+            gap: 8px;
+            color:  #FCFCFC;
+            font-size: 16px;
+            justify-content: center;
 
-            @media (max-width: 767px) { 
-                padding: 16px;
-                font-size: 12px;
-                order: 1;
-                background: transparent;
-                padding: 0;
-                gap: 8px;
+             @media (max-width: 767px) {
+                flex-wrap: wrap;
 
-                a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 24px;
-                    padding: 24px;
-                    background: rgba(255, 255, 255, 0.05);
-                    flex: 1;
-                }
-            }
-            
+             }
         }
-
-        
+       
     }
 }
