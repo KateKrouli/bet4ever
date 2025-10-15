@@ -87,6 +87,7 @@ p {
   height: 59px;
   padding: 25px 40px;
   align-items: center;
+  justify-content: center;
   gap: 14px;
   color: #FFF;
   font-weight: 500;
@@ -613,6 +614,12 @@ p {
 .persons__item:hover {
   width: 753px;
   background-position-y: 13%;
+}
+@media (max-width: 767px) {
+  .persons__item:hover {
+    width: 100%;
+    background-position-y: 25%;
+  }
 }
 .persons__item:hover .persons__content {
   opacity: 1;
