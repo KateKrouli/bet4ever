@@ -1,0 +1,8 @@
+# llms.txt — metadata for Language Model crawlers
+# Replace example values with your real site data
+site_name: Bet4ever
+site_url: https://bet4ever.online/
+contact: webmaster@example.com
+crawl_allowed: true
+preferred_models: gpt-4,gpt-4o
+notes: "This is a simple, non-standard file to help LLM crawlers understand site usage. Adjust fields as needed."

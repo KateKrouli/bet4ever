@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://bet4ever.online/sitemap.xml
+# Replace the URL above with your production sitemap URL

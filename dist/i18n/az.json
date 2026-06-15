@@ -3,8 +3,8 @@
   "nav": { "persons": "Personajlar", "info": "Haqqında" },
   "main": {
     "title": "Həqiqi mərc. Həqiqi mərclər. Həqiqi qələbələr",
-    "code": "BET4EVER2025",
-    "bonus": "%100+ İlk Əmanət Bonusu",
+    "code": "BET4EVER2025-2026",
+    "bonus": "100%+ İlk Əmanət Bonusu",
     "download": "Tətbiqi Yüklə",
     "play": "Oyna",
     "bottomText": "Bet4Ever serialını izləyin və həyəcan, risk və böyük qazanc dünyasına dalın!",
@@ -30,5 +30,5 @@
     { "game": "Bonanza game", "text": "Keçən həftə gəliri 600$", "play": "Oyna" }
   ] },
   "cta": { "title": "Nə qədər qazanacaqsan?", "text": "İndi özünü serialın qəhrəmanı kimi sınay!", "cta": "Qazandır" },
-  "footer": { "title": "Mərclər dünyasına yolun", "payments": "%100 Etibarlı və Sürətli Ödənişlər", "playNow": "İndi Oyna", "newPlayers": "Yeni oyunçular üçün bonus", "copyright": "© 2025 Bet4Ever. Bütün hüquqlar qorunur" }
+  "footer": { "title": "Mərclər dünyasına yolun", "payments": "100% Etibarlı və Sürətli Ödənişlər", "playNow": "İndi Oyna", "newPlayers": "Yeni oyunçular üçün bonus", "copyright": "© 2025 Bet4Ever. Bütün hüquqlar qorunur" }
 }
