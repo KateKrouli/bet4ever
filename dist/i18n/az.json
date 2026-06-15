@@ -1,0 +1,34 @@
+{
+  "lang": { "code": "AZ" },
+  "nav": { "persons": "Personajlar", "info": "Haqqında" },
+  "main": {
+    "title": "Həqiqi mərc. Həqiqi mərclər. Həqiqi qələbələr",
+    "code": "BET4EVER2025",
+    "bonus": "%100+ İlk Əmanət Bonusu",
+    "download": "Tətbiqi Yüklə",
+    "play": "Oyna",
+    "bottomText": "Bet4Ever serialını izləyin və həyəcan, risk və böyük qazanc dünyasına dalın!",
+    "discover": "Daha çox kəşf et"
+  },
+  "info": {
+    "subtitle": "Layihənin təsviri",
+    "title": "Bet4Ever – Mərc həyat tərzinə çevriləndə!",
+    "description": "Misirdə mərc dünyasına başlayın; macəra, həyəcan və gözlənilməz sürprizlərlə doludur.",
+    "cards": {
+      "actors": { "title": "Güclü aktyor heyəti!", "text": "Hər personaj özünəməxsus bir dünyadır..." },
+      "story": { "title": "Həyəcanlı və duyğusal hekayə!", "text": "Həyatını dəyişən təhlükəli bir yol..." },
+      "episodes": { "title": "Gecikdirməyin!", "text": "Bütün epizodları izləyin!" },
+      "quality": { "title": "Yüksək keyfiyyətli məhsul", "text": "Bet4Ever — yalnız bir mərc platforması deyil." }
+    }
+  },
+  "persons": { "subtitle": "Şəxsi layihə təsvirləri", "title": "Serial qəhrəmanları – mərc mütəxəssisləri!", "slides": [
+    { "game": "Aviatrix", "text": "Keçən həftə gəliri 5200$", "play": "Oyna" },
+    { "game": "Plinko", "text": "Keçən həftə gəliri 1800$", "play": "Oyna" },
+    { "game": "Crash", "text": "Keçən həftə gəliri 600$", "play": "Oyna" },
+    { "game": "Olympus Slot", "text": "Keçən həftə gəliri 4000$", "play": "Oyna" },
+    { "game": "Blackjack", "text": "Keçən həftə gəliri 7500$", "play": "Oyna" },
+    { "game": "Bonanza game", "text": "Keçən həftə gəliri 600$", "play": "Oyna" }
+  ] },
+  "cta": { "title": "Nə qədər qazanacaqsan?", "text": "İndi özünü serialın qəhrəmanı kimi sınay!", "cta": "Qazandır" },
+  "footer": { "title": "Mərclər dünyasına yolun", "payments": "%100 Etibarlı və Sürətli Ödənişlər", "playNow": "İndi Oyna", "newPlayers": "Yeni oyunçular üçün bonus", "copyright": "© 2025 Bet4Ever. Bütün hüquqlar qorunur" }
+}

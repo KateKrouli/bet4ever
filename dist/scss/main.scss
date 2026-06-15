@@ -11,6 +11,7 @@ html {
   margin: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   scroll-behavior: smooth;
+  direction: rtl;
 }
 
 body {
@@ -200,7 +201,6 @@ p {
 
 @import 'header';
 @import 'main-block';
-@import 'lang-switcher';
 @import 'info-block';
 @import 'persons-block';
 @import 'cta-block';
