@@ -104,6 +104,16 @@ langButtons?.forEach((button) => {
     if (code) {
       loadAndApply(code);
       document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
+      // reinitialize persons swiper if available, otherwise try to update any Swiper instances
+      setTimeout(() => {
+        if (typeof window.reinitPersonsSwiper === 'function') {
+          window.reinitPersonsSwiper();
+        } else if (window.Swiper && window.Swiper.instances) {
+          window.Swiper.instances.forEach(swiper => {
+            if (swiper && typeof swiper.update === 'function') swiper.update();
+          });
+        }
+      }, 120);
     }
   });
 });

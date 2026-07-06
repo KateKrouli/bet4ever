@@ -1,0 +1,62 @@
+.lang {
+    position: relative;
+    order: 0;
+}
+
+.lang-current {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+        svg path {
+            fill: #F15A24;
+        }
+    }
+
+    &.open {
+        svg  {
+           transform: rotate(180deg);
+        }
+    }
+
+}
+
+.lang-switcher {
+    position: absolute;
+    display: flex;
+    width: 205px;
+    padding: 16px 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid #FCFCFC;
+    background: #020202;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.active {
+
+            &:after {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'><path d='M21 7.37807L10.3749 17.7146C9.9837 18.0951 9.34864 18.0951 8.95748 17.7146L4 12.8913L5.41642 11.5123L9.66569 15.6465L19.5836 6L21 7.37807Z' fill='%23F15A24'/></svg>") center / contain no-repeat;
+            }
+
+        }
+    }
+}
+
+.lang-switcher.open {
+    opacity: 1;
+    visibility: visible;
+}

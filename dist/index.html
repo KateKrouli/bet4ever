@@ -261,22 +261,35 @@
         </div>   
         
     </div>
-  <script>
-    const slider = new Swiper('.swiper', {
-      slidesPerView: 'auto',
-      spaceBetween: 20,
-      loop: false,
-        autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      grabCursor: true,
-    });
-  </script>
+    <script>
+        function createPersonsSwiper() {
+            const isRTL = document.documentElement.dir === 'rtl' || document.body.dataset.lang === 'ar';
+            try {
+                if (window.personsSlider && typeof window.personsSlider.destroy === 'function') {
+                    window.personsSlider.destroy(true, true);
+                }
+            } catch (e) {}
+
+            window.personsSlider = new Swiper('.persons__slider', {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                loop: false,
+                rtl: isRTL,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                grabCursor: true,
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', createPersonsSwiper);
+        window.reinitPersonsSwiper = createPersonsSwiper;
+    </script>
 </section> 
       <section class="cta">
     <div class="cta__title" data-i18n="cta.title">
